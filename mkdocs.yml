@@ -1,0 +1,58 @@
+site_name: OmniMail
+site_description: Vendor-free Go core for transactional email
+site_url: https://plexusone.github.io/omnimail/
+repo_url: https://github.com/plexusone/omnimail
+repo_name: plexusone/omnimail
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  palette:
+    # Dark mode first (PlexusOne default)
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - https://plexusone.dev/css/plexusone-mkdocs.css
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Guides:
+      - Templates: templates.md
+      - SMTP: smtp.md
+  - Providers:
+      - Writing an Adapter: adapters.md
+      - Conformance Suite: conformance.md
+  - Changelog: changelog.md
