@@ -57,4 +57,5 @@ nav:
       - Writing an Adapter: guides/adapters.md
       - Conformance Suite: guides/conformance.md
   - Releases:
+      - v0.1.0: releases/v0.1.0.md
       - Changelog: releases/changelog.md

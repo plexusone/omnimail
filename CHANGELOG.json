@@ -6,27 +6,30 @@
   "versioning": "semver",
   "commitConvention": "conventional",
   "maintainers": ["grokify", "johncwang@gmail.com"],
-  "unreleased": {
-    "highlights": [
-      { "description": "Vendor-free core for transactional email: message model, `Sender` interface, MIME assembly, templates and classified errors with no dependencies outside the standard library" },
-      { "description": "Built-in SMTP, log and memory senders, plus the `providertest` conformance suite for provider adapters" }
-    ],
-    "added": [
-      { "description": "`Address` with `ParseAddress`/`ParseAddressList` validation on `net/mail`, accepting internationalized addresses" },
-      { "description": "`Message` with To/Cc/Bcc, Reply-To, subject, text and HTML bodies, custom headers, tags and idempotency key; `Validate` rejects missing recipients or bodies, reserved headers and line breaks or control characters in header values" },
-      { "description": "`Sender` interface, `SendResult` and `SenderFunc`" },
-      { "description": "`Error` with `Kind` (invalid message, invalid address, rejected, throttled, transient, auth, unknown), sentinel errors for `errors.Is`, `Temporary`, `Retryable`, `KindOf`, `IsRetryable` and `RetryAfter`" },
-      { "description": "`BuildMIME` assembling RFC 5322 single-part or multipart/alternative messages with 7bit, quoted-printable or base64 bodies, RFC 2047 headers, header folding, Date and Message-ID" },
-      { "description": "`Template` rendering subject, text and HTML from strings or an `fs.FS` with HTML autoescaping, `missingkey=error` and single-line subjects" },
-      { "description": "`smtp` sender with required STARTTLS or implicit TLS, AUTH PLAIN/LOGIN, timeouts, context cancellation, SMTPUTF8 checks and reply-code classification" },
-      { "description": "`smtp/smtptest` in-process SMTP server with TLS, AUTH, failure injection and stalls" },
-      { "description": "`logsender` writing messages to `slog` with bodies redacted by default" },
-      { "description": "`memsender` capturing messages for tests with injectable failures" },
-      { "description": "`providertest` conformance suite (`RunAll`, `Harness`) and `DecodeMIME` for adapters" }
-    ],
-    "documentation": [
-      { "description": "README and MkDocs site: getting started, templates, SMTP, writing a provider adapter and the conformance suite" }
-    ]
-  },
-  "releases": []
+  "releases": [
+    {
+      "version": "v0.1.0",
+      "date": "2026-10-07",
+      "highlights": [
+        { "description": "Vendor-free core for transactional email: message model, `Sender` interface, MIME assembly, templates and classified errors with no dependencies outside the standard library" },
+        { "description": "Built-in SMTP, log and memory senders, plus the `providertest` conformance suite for provider adapters" }
+      ],
+      "added": [
+        { "description": "`Address` with `ParseAddress`/`ParseAddressList` validation on `net/mail`, accepting internationalized addresses" },
+        { "description": "`Message` with To/Cc/Bcc, Reply-To, subject, text and HTML bodies, custom headers, tags and idempotency key; `Validate` rejects missing recipients or bodies, reserved headers and line breaks or control characters in header values" },
+        { "description": "`Sender` interface, `SendResult` and `SenderFunc`" },
+        { "description": "`Error` with `Kind` (invalid message, invalid address, rejected, throttled, transient, auth, unknown), sentinel errors for `errors.Is`, `Temporary`, `Retryable`, `KindOf`, `IsRetryable` and `RetryAfter`" },
+        { "description": "`BuildMIME` assembling RFC 5322 single-part or multipart/alternative messages with 7bit, quoted-printable or base64 bodies, RFC 2047 headers, header folding, Date and Message-ID" },
+        { "description": "`Template` rendering subject, text and HTML from strings or an `fs.FS` with HTML autoescaping, `missingkey=error` and single-line subjects" },
+        { "description": "`smtp` sender with required STARTTLS or implicit TLS, AUTH PLAIN/LOGIN, timeouts, context cancellation, SMTPUTF8 checks and reply-code classification" },
+        { "description": "`smtp/smtptest` in-process SMTP server with TLS, AUTH, failure injection and stalls" },
+        { "description": "`logsender` writing messages to `slog` with bodies redacted by default" },
+        { "description": "`memsender` capturing messages for tests with injectable failures" },
+        { "description": "`providertest` conformance suite (`RunAll`, `Harness`) and `DecodeMIME` for adapters" }
+      ],
+      "documentation": [
+        { "description": "README and MkDocs site: guides for getting started, templates, SMTP, writing a provider adapter and the conformance suite, and v0.1.0 release notes" }
+      ]
+    }
+  ]
 }
