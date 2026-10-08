@@ -160,15 +160,15 @@ func TestConformance(t *testing.T) {
 }
 ```
 
-See the [adapter guide](docs/adapters.md) and [conformance suite](docs/conformance.md).
+See the [adapter guide](docs/guides/adapters.md) and [conformance suite](docs/guides/conformance.md).
 
 ## Documentation
 
-- [Getting Started](docs/getting-started.md)
-- [Templates](docs/templates.md)
-- [SMTP](docs/smtp.md)
-- [Writing a Provider Adapter](docs/adapters.md)
-- [Conformance Suite](docs/conformance.md)
+- [Getting Started](docs/guides/getting-started.md)
+- [Templates](docs/guides/templates.md)
+- [SMTP](docs/guides/smtp.md)
+- [Writing a Provider Adapter](docs/guides/adapters.md)
+- [Conformance Suite](docs/guides/conformance.md)
 
 ## License
 

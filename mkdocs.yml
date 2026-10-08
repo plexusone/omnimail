@@ -46,13 +46,15 @@ markdown_extensions:
   - toc:
       permalink: true
 
+# docs/guides/ holds the user guides and docs/releases/ the release notes.
+# docs/specs/ and docs/design/ join the nav as they gain content.
 nav:
   - Home: index.md
-  - Getting Started: getting-started.md
   - Guides:
-      - Templates: templates.md
-      - SMTP: smtp.md
-  - Providers:
-      - Writing an Adapter: adapters.md
-      - Conformance Suite: conformance.md
-  - Changelog: changelog.md
+      - Getting Started: guides/getting-started.md
+      - Templates: guides/templates.md
+      - SMTP: guides/smtp.md
+      - Writing an Adapter: guides/adapters.md
+      - Conformance Suite: guides/conformance.md
+  - Releases:
+      - Changelog: releases/changelog.md
